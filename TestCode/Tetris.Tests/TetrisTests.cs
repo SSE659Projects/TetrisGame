@@ -62,6 +62,7 @@ namespace Tetris.Tests
         }
 
         [TestCase(Game.DifficultyEnum.Easy, ExpectedResult = "Easy")]
+        [TestCase(Game.DifficultyEnum.Medium, ExpectedResult = "Medium")]
         [TestCase(Game.DifficultyEnum.Hard, ExpectedResult = "Hard")]
         public string checkDifficultyGeneration(Game.DifficultyEnum d)
         {
@@ -87,6 +88,17 @@ namespace Tetris.Tests
                     structBlock.type == Game.BlockTypeNum.block07) &&
                     d == Game.DifficultyEnum.Easy)
                     return "Easy";
+                else if ((structBlock.type == Game.BlockTypeNum.block01 ||
+                    structBlock.type == Game.BlockTypeNum.block02 ||
+                    structBlock.type == Game.BlockTypeNum.block03 ||
+                    structBlock.type == Game.BlockTypeNum.block04 ||
+                    structBlock.type == Game.BlockTypeNum.block05 ||
+                    structBlock.type == Game.BlockTypeNum.block06 ||
+                    structBlock.type == Game.BlockTypeNum.block07 ||
+                    structBlock.type == Game.BlockTypeNum.block08 ||
+                    structBlock.type == Game.BlockTypeNum.block09) &&
+                    d == Game.DifficultyEnum.Medium)
+                    return "Medium";
                 else
                     return "Hard";
             }

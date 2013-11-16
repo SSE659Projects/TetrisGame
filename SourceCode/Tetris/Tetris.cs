@@ -215,6 +215,9 @@ namespace Game
             if(d.Equals(DifficultyEnum.Easy))
                 return new StructBlock((RotationEnum)rnd.Next(0, Enum.GetNames(typeof(RotationEnum)).Length),
                                        (BlockTypeNum)rnd.Next(0, 7));
+            else if (d.Equals(DifficultyEnum.Medium))
+                return new StructBlock((RotationEnum)rnd.Next(0, Enum.GetNames(typeof(RotationEnum)).Length),
+                                       (BlockTypeNum)rnd.Next(0, 9));
             else
                 return new StructBlock((RotationEnum)rnd.Next(0, Enum.GetNames(typeof(RotationEnum)).Length),
                                        (BlockTypeNum)rnd.Next(0, Enum.GetNames(typeof(BlockTypeNum)).Length));
