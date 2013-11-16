@@ -1,0 +1,9 @@
+C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\bin\Debug\Tetris.Tests.dll
+C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\bin\Debug\Tetris.Tests.pdb
+C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\bin\Debug\Tetris 2.0.exe
+C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\bin\Debug\Tetris 2.0.pdb
+C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\obj\Debug\Tetris.Tests.dll
+C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\obj\Debug\Tetris.Tests.pdb

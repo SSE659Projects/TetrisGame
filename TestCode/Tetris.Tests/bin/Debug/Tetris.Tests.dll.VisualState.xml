@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1040]Tetris</TopNode>
+  <SelectedNode>[0-1000]Tetris.Tests.TetrisTests</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1039]C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\bin\Debug\Tetris.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1040]Tetris" Expanded="true" />
+    <Node UniqueName="[0-1041]Tetris.Tests" Expanded="true" />
+    <Node UniqueName="[0-1000]Tetris.Tests.TetrisTests" Expanded="true" />
+    <Node UniqueName="[0-1014]Tetris.Tests.TetrisTests.checkBlockColor" Expanded="true" />
+    <Node UniqueName="[0-1001]Tetris.Tests.TetrisTests.checkBlockType" Expanded="true" />
+    <Node UniqueName="[0-1027]Tetris.Tests.TetrisTests.checkNextRotation" Expanded="true" />
+  </Nodes>
+</VisualState>

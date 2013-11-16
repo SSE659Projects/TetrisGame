@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\bin\Debug\Tetris.Tests.dll" total="34" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-11-13" time="17:18:31">
+  <environment nunit-version="2.5.10.11092" clr-version="4.0.30319.1008" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris" machine-name="LAPTOP-PC" user="Laptop" user-domain="Laptop-PC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Laptop\Desktop\Mercer Masters\SSE659\Proj 3 Programs\Tetris\Tetris.Tests\bin\Debug\Tetris.Tests.dll" executed="True" result="Success" success="True" time="0.086" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Tetris" executed="True" result="Success" success="True" time="0.086" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.086" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="TetrisTests" executed="True" result="Success" success="True" time="0.086" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="checkBlockColor" executed="True" result="Success" success="True" time="0.027" asserts="0">
+                    <results>
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;None&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;Green&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;Cyan&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;Orange&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;Red&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;Blue&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;Yellow&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;Brown&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;Magenta&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;DarkBlue&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;GreenYellow&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockColor(&quot;Pink&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="checkBlockType" executed="True" result="Success" success="True" time="0.024" asserts="0">
+                    <results>
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block12)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block01)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block02)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block03)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block04)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block05)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block06)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block07)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block08)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block09)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block10)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkBlockType(block11)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="checkDifficultyGeneration" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                    <results>
+                      <test-case name="Tetris.Tests.TetrisTests.checkDifficultyGeneration(Hard)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkDifficultyGeneration(Easy)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="checkNextRotation" executed="True" result="Success" success="True" time="0.014" asserts="0">
+                    <results>
+                      <test-case name="Tetris.Tests.TetrisTests.checkNextRotation(1,deg0)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkNextRotation(0,deg180)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkNextRotation(0,deg90)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkNextRotation(1,deg270)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkNextRotation(1,deg180)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkNextRotation(0,deg270)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkNextRotation(1,deg90)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tetris.Tests.TetrisTests.checkNextRotation(0,deg0)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
