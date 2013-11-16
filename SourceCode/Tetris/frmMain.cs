@@ -322,7 +322,9 @@ namespace Game
             lblSpeed.Text = String.Format("Speed : {0:D2}", Speed);
             lblLevel.Text = String.Format("Level : {0:D2}", Level);
 
-            if (Lines >= 100)
+            if ((Lines >= 50 && Tetris.Difficulty == DifficultyEnum.Easy) ||
+                (Lines >= 75 && Tetris.Difficulty == DifficultyEnum.Medium) ||
+                (Lines >= 100 && Tetris.Difficulty == DifficultyEnum.Hard))
             {
                 isGameSuccess = true;
                 if (mnuGameSettingsSound.Checked)
