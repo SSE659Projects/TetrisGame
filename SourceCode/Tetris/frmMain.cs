@@ -338,12 +338,21 @@ namespace Game
         private void mnuGameSettingsEasy_Click(object sender, System.EventArgs e)
         {
             mnuGameSettingsEasy.Checked = true;
+            mnuGameSettingsMedium.Checked = false;
+            mnuGameSettingsHard.Checked = false;
+        }
+
+        private void mnuGameSettingsMedium_Click(object sender, System.EventArgs e)
+        {
+            mnuGameSettingsEasy.Checked = false;
+            mnuGameSettingsMedium.Checked = true;
             mnuGameSettingsHard.Checked = false;
         }
 
         private void mnuGameSettingsHard_Click(object sender, System.EventArgs e)
         {
             mnuGameSettingsEasy.Checked = false;
+            mnuGameSettingsMedium.Checked = false;
             mnuGameSettingsHard.Checked = true;
         }
 
@@ -366,6 +375,8 @@ namespace Game
             {
                 if (mnuGameSettingsEasy.Checked)
                     Tetris.Difficulty = DifficultyEnum.Easy;
+                else if (mnuGameSettingsMedium.Checked)
+                    Tetris.Difficulty = DifficultyEnum.Medium;
                 else
                     Tetris.Difficulty = DifficultyEnum.Hard;
 
@@ -377,6 +388,7 @@ namespace Game
                 copyImage();
                 // reset menus
                 mnuGameSettingsEasy.Enabled = false;
+                mnuGameSettingsMedium.Enabled = false;
                 mnuGameSettingsHard.Enabled = false;
                 // reset status
                 Speed = 1;    
@@ -402,6 +414,7 @@ namespace Game
             {
                 // reset menus
                 mnuGameSettingsEasy.Enabled = true;
+                mnuGameSettingsMedium.Enabled = true;
                 mnuGameSettingsHard.Enabled = true;
                 // reset variables
                 isGameSuccess = false;

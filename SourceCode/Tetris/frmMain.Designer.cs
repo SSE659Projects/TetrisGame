@@ -38,6 +38,7 @@
             this.mnuGame = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGameSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuGameSettingsEasy = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuGameSettingsMedium = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuGameSettingsHard = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuGameSettingsSound = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,6 +127,7 @@
             // 
             this.menuGameSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuGameSettingsEasy,
+            this.mnuGameSettingsMedium,
             this.mnuGameSettingsHard,
             this.toolStripMenuItem1,
             this.mnuGameSettingsSound});
@@ -141,6 +143,13 @@
             this.mnuGameSettingsEasy.Size = new System.Drawing.Size(108, 22);
             this.mnuGameSettingsEasy.Text = "Easy";
             this.mnuGameSettingsEasy.Click += new System.EventHandler(this.mnuGameSettingsEasy_Click);
+            // 
+            // mnuGameSettingsMedium
+            // 
+            this.mnuGameSettingsMedium.Name = "mnuGameSettingsMedium";
+            this.mnuGameSettingsMedium.Size = new System.Drawing.Size(108, 22);
+            this.mnuGameSettingsMedium.Text = "Medium";
+            this.mnuGameSettingsMedium.Click += new System.EventHandler(this.mnuGameSettingsMedium_Click);
             // 
             // mnuGameSettingsHard
             // 
@@ -265,6 +274,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuGame;
         private System.Windows.Forms.ToolStripMenuItem menuGameSettings;
         private System.Windows.Forms.ToolStripMenuItem mnuGameSettingsEasy;
+        private System.Windows.Forms.ToolStripMenuItem mnuGameSettingsMedium;
         private System.Windows.Forms.ToolStripMenuItem mnuGameSettingsHard;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mnuGameSettingsSound;

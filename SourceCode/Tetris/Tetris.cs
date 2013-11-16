@@ -34,7 +34,8 @@ namespace Game
     public enum DifficultyEnum
     {
         Easy = 0,
-        Hard = 1
+        Medium = 1,
+        Hard = 2
     }
 
     public struct StructBlock
