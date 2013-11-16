@@ -78,9 +78,9 @@ namespace Game
                 }
                 else
                 {
-                    Size tsz = e.Graphics.MeasureString("Game Over!!!", new Font("Arial Black", 20)).ToSize();
+                    Size tsz = e.Graphics.MeasureString("Game Over!\n You Lose!", new Font("Arial Black", 20)).ToSize();
 
-                    e.Graphics.DrawString("Game Over!!!", new Font("Arial Black", 20),
+                    e.Graphics.DrawString("Game Over!\n You Lose!", new Font("Arial Black", 20),
                                                           new SolidBrush(Color.White),
                                                           new PointF((picField.Width - tsz.Width) / 2, (picField.Height - tsz.Height) / 4));
                 }
