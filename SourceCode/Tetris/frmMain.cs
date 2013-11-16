@@ -337,25 +337,25 @@ namespace Game
             picField.DrawToBitmap(saveImage, new Rectangle(0, 0, picField.Width, picField.Height));
         }
 
-        private void mnuGameSettingsEasy_Click(object sender, System.EventArgs e)
+        private void mnuDifficultyEasy_Click(object sender, System.EventArgs e)
         {
-            mnuGameSettingsEasy.Checked = true;
-            mnuGameSettingsMedium.Checked = false;
-            mnuGameSettingsHard.Checked = false;
+            mnuDifficultyEasy.Checked = true;
+            mnuDifficultyMedium.Checked = false;
+            mnuDifficultyHard.Checked = false;
         }
 
-        private void mnuGameSettingsMedium_Click(object sender, System.EventArgs e)
+        private void mnuDifficultyMedium_Click(object sender, System.EventArgs e)
         {
-            mnuGameSettingsEasy.Checked = false;
-            mnuGameSettingsMedium.Checked = true;
-            mnuGameSettingsHard.Checked = false;
+            mnuDifficultyEasy.Checked = false;
+            mnuDifficultyMedium.Checked = true;
+            mnuDifficultyHard.Checked = false;
         }
 
-        private void mnuGameSettingsHard_Click(object sender, System.EventArgs e)
+        private void mnuDifficultyHard_Click(object sender, System.EventArgs e)
         {
-            mnuGameSettingsEasy.Checked = false;
-            mnuGameSettingsMedium.Checked = false;
-            mnuGameSettingsHard.Checked = true;
+            mnuDifficultyEasy.Checked = false;
+            mnuDifficultyMedium.Checked = false;
+            mnuDifficultyHard.Checked = true;
         }
 
         private void mnuGameSettingsSound_Click(object sender, System.EventArgs e)
@@ -375,9 +375,9 @@ namespace Game
         {
             if (isStart)
             {
-                if (mnuGameSettingsEasy.Checked)
+                if (mnuDifficultyEasy.Checked)
                     Tetris.Difficulty = DifficultyEnum.Easy;
-                else if (mnuGameSettingsMedium.Checked)
+                else if (mnuDifficultyMedium.Checked)
                     Tetris.Difficulty = DifficultyEnum.Medium;
                 else
                     Tetris.Difficulty = DifficultyEnum.Hard;
@@ -389,9 +389,9 @@ namespace Game
                 // copy the background image and place it to saveImage.
                 copyImage();
                 // reset menus
-                mnuGameSettingsEasy.Enabled = false;
-                mnuGameSettingsMedium.Enabled = false;
-                mnuGameSettingsHard.Enabled = false;
+                mnuDifficultyEasy.Enabled = false;
+                mnuDifficultyMedium.Enabled = false;
+                mnuDifficultyHard.Enabled = false;
                 // reset status
                 Speed = 1;    
                 Level = 1;    
@@ -415,9 +415,9 @@ namespace Game
             else
             {
                 // reset menus
-                mnuGameSettingsEasy.Enabled = true;
-                mnuGameSettingsMedium.Enabled = true;
-                mnuGameSettingsHard.Enabled = true;
+                mnuDifficultyEasy.Enabled = true;
+                mnuDifficultyMedium.Enabled = true;
+                mnuDifficultyHard.Enabled = true;
                 // reset variables
                 isGameSuccess = false;
                 isGameOver    = false;

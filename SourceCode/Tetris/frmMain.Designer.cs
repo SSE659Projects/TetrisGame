@@ -37,17 +37,21 @@
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuGame = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGameSettings = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuGameSettingsEasy = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuGameSettingsMedium = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuGameSettingsHard = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuGameSettingsSound = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuGameExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuDifficulty = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuGameSettingsEasy = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuGameSettingsMedium = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuGameSettingsHard = new System.Windows.Forms.ToolStripMenuItem();
             this.picField = new System.Windows.Forms.PictureBox();
             this.picPreview = new System.Windows.Forms.PictureBox();
             this.lblGamePlay = new System.Windows.Forms.Label();
+            this.mnuDifficultyEasy = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuDifficultyMedium = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuDifficultyHard = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picField)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
@@ -106,6 +110,7 @@
             // 
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuGame,
+            this.mnuDifficulty,
             this.mnuAbout});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
@@ -126,63 +131,47 @@
             // menuGameSettings
             // 
             this.menuGameSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuGameSettingsEasy,
-            this.mnuGameSettingsMedium,
-            this.mnuGameSettingsHard,
             this.toolStripMenuItem1,
             this.mnuGameSettingsSound});
             this.menuGameSettings.Name = "menuGameSettings";
-            this.menuGameSettings.Size = new System.Drawing.Size(125, 22);
+            this.menuGameSettings.Size = new System.Drawing.Size(152, 22);
             this.menuGameSettings.Text = "Settings...";
-            // 
-            // mnuGameSettingsEasy
-            // 
-            this.mnuGameSettingsEasy.Name = "mnuGameSettingsEasy";
-            this.mnuGameSettingsEasy.Size = new System.Drawing.Size(108, 22);
-            this.mnuGameSettingsEasy.Text = "Easy";
-            this.mnuGameSettingsEasy.Click += new System.EventHandler(this.mnuGameSettingsEasy_Click);
-            // 
-            // mnuGameSettingsMedium
-            //
-            this.mnuGameSettingsMedium.Checked = true;
-            this.mnuGameSettingsMedium.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.mnuGameSettingsMedium.Name = "mnuGameSettingsMedium";
-            this.mnuGameSettingsMedium.Size = new System.Drawing.Size(108, 22);
-            this.mnuGameSettingsMedium.Text = "Medium";
-            this.mnuGameSettingsMedium.Click += new System.EventHandler(this.mnuGameSettingsMedium_Click);
-            // 
-            // mnuGameSettingsHard
-            // 
-            this.mnuGameSettingsHard.Name = "mnuGameSettingsHard";
-            this.mnuGameSettingsHard.Size = new System.Drawing.Size(108, 22);
-            this.mnuGameSettingsHard.Text = "Hard";
-            this.mnuGameSettingsHard.Click += new System.EventHandler(this.mnuGameSettingsHard_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(105, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuGameSettingsSound
             // 
             this.mnuGameSettingsSound.Checked = true;
             this.mnuGameSettingsSound.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnuGameSettingsSound.Name = "mnuGameSettingsSound";
-            this.mnuGameSettingsSound.Size = new System.Drawing.Size(108, 22);
+            this.mnuGameSettingsSound.Size = new System.Drawing.Size(152, 22);
             this.mnuGameSettingsSound.Text = "Sound";
             this.mnuGameSettingsSound.Click += new System.EventHandler(this.mnuGameSettingsSound_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(122, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuGameExit
             // 
             this.mnuGameExit.Name = "mnuGameExit";
-            this.mnuGameExit.Size = new System.Drawing.Size(125, 22);
+            this.mnuGameExit.Size = new System.Drawing.Size(152, 22);
             this.mnuGameExit.Text = "E&xit";
             this.mnuGameExit.Click += new System.EventHandler(this.mnuGameExit_Click);
+            // 
+            // mnuDifficulty
+            // 
+            this.mnuDifficulty.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuDifficultyEasy,
+            this.mnuDifficultyMedium,
+            this.mnuDifficultyHard});
+            this.mnuDifficulty.Name = "mnuDifficulty";
+            this.mnuDifficulty.Size = new System.Drawing.Size(67, 20);
+            this.mnuDifficulty.Text = "&Difficulty";
             // 
             // mnuAbout
             // 
@@ -229,6 +218,29 @@
             this.lblGamePlay.Text = "&Start";
             this.lblGamePlay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblGamePlay.Click += new System.EventHandler(this.lblGamePlay_Click);
+            // 
+            // mnuDifficultyEasy
+            // 
+            this.mnuDifficultyEasy.Name = "mnuDifficultyEasy";
+            this.mnuDifficultyEasy.Size = new System.Drawing.Size(152, 22);
+            this.mnuDifficultyEasy.Text = "Easy";
+            this.mnuDifficultyEasy.Click += new System.EventHandler(this.mnuDifficultyEasy_Click);
+            // 
+            // mnuDifficultyMedium
+            //
+            this.mnuDifficultyMedium.Checked = true;
+            this.mnuDifficultyMedium.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.mnuDifficultyMedium.Name = "mnuDifficultyMedium";
+            this.mnuDifficultyMedium.Size = new System.Drawing.Size(152, 22);
+            this.mnuDifficultyMedium.Text = "Medium";
+            this.mnuDifficultyMedium.Click += new System.EventHandler(this.mnuDifficultyMedium_Click);
+            // 
+            // mnuDifficultyHard
+            // 
+            this.mnuDifficultyHard.Name = "mnuDifficultyHard";
+            this.mnuDifficultyHard.Size = new System.Drawing.Size(152, 22);
+            this.mnuDifficultyHard.Text = "Hard";
+            this.mnuDifficultyHard.Click += new System.EventHandler(this.mnuDifficultyHard_Click);
             // 
             // frmMain
             // 
@@ -280,8 +292,12 @@
         private System.Windows.Forms.ToolStripMenuItem mnuGameSettingsSound;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem mnuGameExit;
+        private System.Windows.Forms.ToolStripMenuItem mnuDifficulty;
         private System.Windows.Forms.ToolStripMenuItem mnuAbout;
         private System.Windows.Forms.Label lblGamePlay;
+        private System.Windows.Forms.ToolStripMenuItem mnuDifficultyEasy;
+        private System.Windows.Forms.ToolStripMenuItem mnuDifficultyMedium;
+        private System.Windows.Forms.ToolStripMenuItem mnuDifficultyHard;
     }
 }
 
