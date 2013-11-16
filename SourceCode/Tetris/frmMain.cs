@@ -406,7 +406,6 @@ namespace Game
                 // reset variables
                 isGameSuccess = false;
                 isGameOver    = false;
-                isGameStart   = false;
                 // stop the game.
                 isGameStart     = false;
                 tmrGame.Enabled = false;

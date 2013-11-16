@@ -64,7 +64,7 @@ namespace Tetris.Tests
         [TestCase(Game.DifficultyEnum.Easy, ExpectedResult = "Easy")]
         [TestCase(Game.DifficultyEnum.Hard, ExpectedResult = "Hard")]
         public string checkDifficultyGeneration(Game.DifficultyEnum d)
-        { 
+        {
             Game.StructBlock structBlock = base.Generate(d);
 
             if (structBlock.angle == Game.RotationEnum.deg0 ||
@@ -72,18 +72,27 @@ namespace Tetris.Tests
                 structBlock.angle == Game.RotationEnum.deg180 ||
                     structBlock.angle == Game.RotationEnum.deg270)
             {
-                if (structBlock.type == Game.BlockTypeNum.block01 ||
+                if ((structBlock.type == Game.BlockTypeNum.block08 ||
+                    structBlock.type == Game.BlockTypeNum.block09 ||
+                    structBlock.type == Game.BlockTypeNum.block10 ||
+                    structBlock.type == Game.BlockTypeNum.block11) &&
+                    d == Game.DifficultyEnum.Hard)
+                    return "Hard";
+                else if ((structBlock.type == Game.BlockTypeNum.block01 ||
                     structBlock.type == Game.BlockTypeNum.block02 ||
                     structBlock.type == Game.BlockTypeNum.block03 ||
                     structBlock.type == Game.BlockTypeNum.block04 ||
                     structBlock.type == Game.BlockTypeNum.block05 ||
                     structBlock.type == Game.BlockTypeNum.block06 ||
-                    structBlock.type == Game.BlockTypeNum.block07)
+                    structBlock.type == Game.BlockTypeNum.block07) &&
+                    d == Game.DifficultyEnum.Easy)
                     return "Easy";
                 else
                     return "Hard";
             }
             return "Hard";
         }
+        
+
     }
 }
