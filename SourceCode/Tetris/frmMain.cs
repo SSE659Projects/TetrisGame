@@ -70,9 +70,9 @@ namespace Game
 
                 if (isGameSuccess)
                 {
-                    Size tsz = e.Graphics.MeasureString("Congratulations!!!", new Font("Arial Black", 16)).ToSize();
+                    Size tsz = e.Graphics.MeasureString("Congratulations!\n      You Win!", new Font("Arial Black", 16)).ToSize();
 
-                    e.Graphics.DrawString("Congratulations!!!", new Font("Arial Black", 16),
+                    e.Graphics.DrawString("Congratulations!\n      You Win!", new Font("Arial Black", 16),
                                                                 new SolidBrush(Color.White),
                                                                 new PointF((picField.Width - tsz.Width) / 2, (picField.Height - tsz.Height) / 4));
                 }
