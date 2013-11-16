@@ -137,15 +137,15 @@
             // 
             // mnuGameSettingsEasy
             // 
-            this.mnuGameSettingsEasy.Checked = true;
-            this.mnuGameSettingsEasy.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnuGameSettingsEasy.Name = "mnuGameSettingsEasy";
             this.mnuGameSettingsEasy.Size = new System.Drawing.Size(108, 22);
             this.mnuGameSettingsEasy.Text = "Easy";
             this.mnuGameSettingsEasy.Click += new System.EventHandler(this.mnuGameSettingsEasy_Click);
             // 
             // mnuGameSettingsMedium
-            // 
+            //
+            this.mnuGameSettingsMedium.Checked = true;
+            this.mnuGameSettingsMedium.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnuGameSettingsMedium.Name = "mnuGameSettingsMedium";
             this.mnuGameSettingsMedium.Size = new System.Drawing.Size(108, 22);
             this.mnuGameSettingsMedium.Text = "Medium";
