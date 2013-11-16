@@ -352,9 +352,9 @@ namespace Game
             mnuGameSettingsSound.Checked = !mnuGameSettingsSound.Checked;
         }
 
-        private void mnuGamePlay_Click(object sender, System.EventArgs e)
+        private void lblGamePlay_Click(object sender, System.EventArgs e)
         {
-            if (mnuGamePlay.Text.ToUpper().Equals("&START"))
+            if (lblGamePlay.Text.ToUpper().Equals("&START"))
                 GameStart(true);
             else
                 GameStart(false);
@@ -396,7 +396,7 @@ namespace Game
                 // start the game.
                 tmrGame.Enabled  = true;
 
-                mnuGamePlay.Text = "&Stop";
+                lblGamePlay.Text = "&Stop";
             }
             else
             {
@@ -410,7 +410,7 @@ namespace Game
                 isGameStart     = false;
                 tmrGame.Enabled = false;
 
-                mnuGamePlay.Text = "&Start";
+                lblGamePlay.Text = "&Start";
             }
         }
 

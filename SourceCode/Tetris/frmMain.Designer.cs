@@ -36,7 +36,6 @@
             this.lblLevel = new System.Windows.Forms.Label();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuGame = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuGamePlay = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGameSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuGameSettingsEasy = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuGameSettingsHard = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,9 +43,10 @@
             this.mnuGameSettingsSound = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuGameExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.picField = new System.Windows.Forms.PictureBox();
             this.picPreview = new System.Windows.Forms.PictureBox();
-            this.mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblGamePlay = new System.Windows.Forms.Label();
             this.mnuMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picField)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
@@ -115,20 +115,12 @@
             // mnuGame
             // 
             this.mnuGame.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuGamePlay,
             this.menuGameSettings,
             this.toolStripMenuItem2,
             this.mnuGameExit});
             this.mnuGame.Name = "mnuGame";
             this.mnuGame.Size = new System.Drawing.Size(50, 20);
             this.mnuGame.Text = "&Game";
-            // 
-            // mnuGamePlay
-            // 
-            this.mnuGamePlay.Name = "mnuGamePlay";
-            this.mnuGamePlay.Size = new System.Drawing.Size(125, 22);
-            this.mnuGamePlay.Text = "&Start";
-            this.mnuGamePlay.Click += new System.EventHandler(this.mnuGamePlay_Click);
             // 
             // menuGameSettings
             // 
@@ -179,9 +171,16 @@
             // mnuGameExit
             // 
             this.mnuGameExit.Name = "mnuGameExit";
-            this.mnuGameExit.Size = new System.Drawing.Size(152, 22);
+            this.mnuGameExit.Size = new System.Drawing.Size(125, 22);
             this.mnuGameExit.Text = "E&xit";
             this.mnuGameExit.Click += new System.EventHandler(this.mnuGameExit_Click);
+            // 
+            // mnuAbout
+            // 
+            this.mnuAbout.Name = "mnuAbout";
+            this.mnuAbout.Size = new System.Drawing.Size(52, 20);
+            this.mnuAbout.Text = "&About";
+            this.mnuAbout.Click += new System.EventHandler(this.mnuAbout_Click);
             // 
             // picField
             // 
@@ -205,12 +204,22 @@
             this.picPreview.TabStop = false;
             this.picPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.picPreview_Paint);
             // 
-            // mnuAbout
+            // lblGamePlay
             // 
-            this.mnuAbout.Name = "mnuAbout";
-            this.mnuAbout.Size = new System.Drawing.Size(52, 20);
-            this.mnuAbout.Text = "&About";
-            this.mnuAbout.Click += new System.EventHandler(this.mnuAbout_Click);
+            this.lblGamePlay.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblGamePlay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblGamePlay.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lblGamePlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGamePlay.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblGamePlay.Location = new System.Drawing.Point(265, 280);
+            this.lblGamePlay.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.lblGamePlay.Name = "lblGamePlay";
+            this.lblGamePlay.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblGamePlay.Size = new System.Drawing.Size(89, 26);
+            this.lblGamePlay.TabIndex = 10;
+            this.lblGamePlay.Text = "&Start";
+            this.lblGamePlay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblGamePlay.Click += new System.EventHandler(this.lblGamePlay_Click);
             // 
             // frmMain
             // 
@@ -219,6 +228,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(370, 436);
+            this.Controls.Add(this.lblGamePlay);
             this.Controls.Add(this.picField);
             this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.lblSpeed);
@@ -253,7 +263,6 @@
         private System.Windows.Forms.PictureBox picField;
         private System.Windows.Forms.MenuStrip mnuMain;
         private System.Windows.Forms.ToolStripMenuItem mnuGame;
-        private System.Windows.Forms.ToolStripMenuItem mnuGamePlay;
         private System.Windows.Forms.ToolStripMenuItem menuGameSettings;
         private System.Windows.Forms.ToolStripMenuItem mnuGameSettingsEasy;
         private System.Windows.Forms.ToolStripMenuItem mnuGameSettingsHard;
@@ -262,6 +271,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem mnuGameExit;
         private System.Windows.Forms.ToolStripMenuItem mnuAbout;
+        private System.Windows.Forms.Label lblGamePlay;
     }
 }
 
