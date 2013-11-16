@@ -92,7 +92,25 @@ namespace Tetris.Tests
             }
             return "Hard";
         }
-        
 
+        [TestCase("Red", 1)]
+        [TestCase("Blue", 2)]
+        [TestCase("Green", 3)]
+        [TestCase("Cyan", 4)]
+        [TestCase("Yellow", 5)]
+        [TestCase("Orange", 6)]
+        [TestCase("Magenta", 7)]
+        [TestCase("Brown", 8)]
+        [TestCase("DarkBlue", 9)]
+        [TestCase("GreenYellow", 10)]
+        [TestCase("Pink", 11)]
+        [TestCase("White", 12)]
+        public void checkRandomColor(string color, int colorNumber)
+        {
+            Color expected = System.Drawing.Color.FromName(color);
+            Color actual;
+            actual = base.Color(colorNumber);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

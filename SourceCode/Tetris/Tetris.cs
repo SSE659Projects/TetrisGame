@@ -175,32 +175,32 @@ namespace Game
             }
         }
 
-        public System.Drawing.Color Color(BlockTypeNum typBlock)
+        public System.Drawing.Color Color(int colorNumber)
         {
             // this function returns the color of the block.
-            switch (typBlock)
+            switch (colorNumber)
             {
-                case BlockTypeNum.block01:
+                case 1:
                     return System.Drawing.Color.Red;
-                case BlockTypeNum.block02:
+                case 2:
                     return System.Drawing.Color.Blue;
-                case BlockTypeNum.block03:
+                case 3:
                     return System.Drawing.Color.Green;
-                case BlockTypeNum.block04:
+                case 4:
                     return System.Drawing.Color.Cyan;
-                case BlockTypeNum.block05:
+                case 5:
                     return System.Drawing.Color.Yellow;
-                case BlockTypeNum.block06:
+                case 6:
                     return System.Drawing.Color.Orange;
-                case BlockTypeNum.block07:
+                case 7:
                     return System.Drawing.Color.Magenta;
-                case BlockTypeNum.block08:
+                case 8:
                     return System.Drawing.Color.Brown;
-                case BlockTypeNum.block09:
+                case 9:
                     return System.Drawing.Color.DarkBlue;
-                case BlockTypeNum.block10:
+                case 10:
                     return System.Drawing.Color.GreenYellow;
-                case BlockTypeNum.block11:
+                case 11:
                     return System.Drawing.Color.Pink;
                 default:
                     return System.Drawing.Color.White;
@@ -808,6 +808,7 @@ namespace Game
 
             BlockClass Block = new BlockClass();
 
+
             for (int row = 0; row < h; row++)
                 for (int col = 0; col < w; col++)
                     if (((StructBlockStyle)arrField[col + row * w]).isBlock)
@@ -860,7 +861,12 @@ namespace Game
                                     TetrisField.width;
 
                     if (arrBlock[blockIndex])
-                        arrField[fieldIndex] = new StructBlockStyle(Block.Color(Block.Type), true);
+                    {
+                        Random rnd = new Random();
+                        int colorNumber = rnd.Next(1, 11);
+
+                        arrField[fieldIndex] = new StructBlockStyle(Block.Color(colorNumber), true);
+                    }
                 }
 
             ProcessRows();
